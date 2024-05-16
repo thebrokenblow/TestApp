@@ -1,0 +1,4 @@
+SELECT dbo.Categories.NameCategory, dbo.Products.NameProduct
+FROM     dbo.Products LEFT OUTER JOIN
+                  dbo.ProductCategory ON dbo.Products.id = dbo.ProductCategory.idProduct LEFT OUTER JOIN
+                  dbo.Categories ON dbo.ProductCategory.idCategory = dbo.Categories.id
